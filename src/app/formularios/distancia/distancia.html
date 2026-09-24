@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <form>
+                        
+                        <div class="form-group pt-4">
+                            <label for="num1">Número 1</label>
+                            <input [(ngModel)]="x2" name="num1" type="text" class="form-control" id="num1" placeholder="Ingrese número 1">
+                        </div>
+                        <div class="form-group pt-4">
+                            <label for="num1">Número 2</label>
+                            <input [(ngModel)]="y2" name="num2" type="text" class="form-control" id="num1" placeholder="Ingrese número 2">
+                        </div>
+                        <div class="form-group pt-4">
+                            <label for="num1">Número 3</label>
+                            <input [(ngModel)]="x1" name="num3" type="text" class="form-control" id="num1" placeholder="Ingrese número 3">
+                        </div>
+                        <div class="form-group pt-4">
+                            <label for="num1">Número 4</label>
+                            <input [(ngModel)]="y1" name="num4" type="text" class="form-control" id="num1" placeholder="Ingrese número 4">
+                        </div>
+                        <br>
+                        
+                        
+                        <button (click)="calcular()" type="button" class="btn btn-primary">
+                            Calcular 
+                        </button>
+
+
+
+
+                    </form>
+                </div>
+                <div class="col-6">
+                    <h3>Resultado: {{resultado}} </h3>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>
